@@ -13,14 +13,12 @@
     
     </html>
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe | Master's Student</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <style>
         * {
             margin: 0;
@@ -29,353 +27,381 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #fafafa;
+            background-color: #f8f9fa;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
+        /* Header Styles */
         header {
-            padding: 60px 0 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #34495e;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
             text-align: center;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+            margin: 15px auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 20px;
-            border: 3px solid #fff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #222;
+        .about-text {
+            flex: 1;
         }
 
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
+        .about-text h3 {
+            font-size: 1.8rem;
             margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-content {
+            display: flex;
+            align-items: flex-start;
+            padding: 25px;
+        }
+
+        .project-image {
+            flex: 0 0 150px;
+            margin-right: 25px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-info {
+            flex: 1;
+        }
+
+        .project-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .project-info p {
+            margin-bottom: 15px;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        .github-link {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-link:hover {
+            background-color: #555;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
         }
 
         .contact-links {
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-top: 20px;
         }
 
-        .contact-links a {
-            color: #444;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-
-        .contact-links a:hover {
-            color: #0066cc;
-        }
-
-        section {
-            padding: 40px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            color: #222;
-        }
-
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 20px 0 10px;
-            color: #333;
-        }
-
-        p {
-            margin-bottom: 15px;
-            font-size: 1rem;
-            color: #444;
-        }
-
-        .research-item {
-            margin-bottom: 30px;
-        }
-
-        .publication {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .publication:last-child {
-            border-bottom: none;
-        }
-
-        .publication-title {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .publication-authors {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .publication-source {
-            color: #0066cc;
-            font-size: 0.9rem;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .skill-item {
-            background: #f5f5f5;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        .project {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 40px;
-            align-items: flex-start;
-        }
-
-        .project:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-image {
-            flex: 0 0 250px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        .project-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .project-content {
-            flex: 1;
-        }
-
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        .project-description {
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .project-link {
+        .contact-link {
             display: inline-block;
-            background: #0066cc;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 4px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 0.9rem;
-            transition: background 0.2s;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
         }
 
-        .project-link:hover {
-            background: #0052a3;
+        .contact-link:hover {
+            background-color: #2980b9;
         }
 
+        /* Footer */
         footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
             padding: 30px 0;
-            color: #777;
-            font-size: 0.9rem;
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .project {
+            .about-content {
                 flex-direction: column;
+                text-align: center;
             }
-            
-            .project-image {
-                flex: 0 0 auto;
-                width: 100%;
+
+            .profile-img {
+                margin-bottom: 30px;
             }
-            
-            header {
-                padding: 40px 0 30px;
+
+            .nav-links {
+                display: none;
             }
-            
-            h1 {
+
+            .section-title {
                 font-size: 2rem;
             }
-            
-            .subtitle {
-                font-size: 1rem;
+
+            .project-content {
+                flex-direction: column;
+                text-align: center;
             }
-            
+
+            .project-image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
             .contact-links {
                 flex-direction: column;
-                gap: 10px;
-            }
-            
-            section {
-                padding: 30px 0;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://placehold.co/120x120" alt="Profile Photo" class="profile-img">
-            <h1>John Doe</h1>
-            <div class="subtitle">Master's Student in Computer Science</div>
-            <div class="contact-links">
-                <a href="mailto:johndoe@example.com">johndoe@example.com</a>
-                <a href="https://github.com/johndoe" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-                <a href="https://scholar.google.com/citations?user=example" target="_blank">Google Scholar</a>
-            </div>
-        </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">John Doe</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a Master's student in Computer Science at XYZ University, specializing in Machine Learning and Artificial Intelligence. My research focuses on developing novel algorithms for natural language processing applications.</p>
-            <p>With a strong foundation in mathematics and programming, I am passionate about solving complex problems through computational approaches. I am currently seeking PhD opportunities to further my research in AI and contribute to cutting-edge developments in the field.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <div class="project-image">
-                    <img src="https://placehold.co/300x200" alt="Project 1">
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="https://placehold.co/300x300" alt="John Doe">
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Neural Machine Translation System</h3>
-                    <p class="project-description">Developed a transformer-based neural machine translation system that achieves state-of-the-art results on low-resource language pairs. The system incorporates attention mechanisms and beam search optimization for improved translation quality.</p>
-                    <a href="https://github.com/johndoe/nmt-system" target="_blank" class="project-link">View on GitHub</a>
+                <div class="about-text">
+                    <h3>Master's Student in Computer Science</h3>
+                    <p>I am a dedicated Master's student specializing in Machine Learning and Artificial Intelligence at XYZ University. My research focuses on deep learning applications in natural language processing and computer vision.</p>
+                    <p>With a strong foundation in mathematics and programming, I have developed expertise in Python, TensorFlow, and PyTorch. My academic journey has been driven by a passion for solving complex problems through innovative algorithmic approaches.</p>
+                    <p>I am currently seeking PhD opportunities to further explore the frontiers of AI research and contribute to groundbreaking discoveries in the field.</p>
                 </div>
             </div>
-            
-            <div class="project">
-                <div class="project-image">
-                    <img src="https://placehold.co/300x200" alt="Project 2">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://placehold.co/150x150" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Neural Machine Translation</h3>
+                            <p>Developed a transformer-based model for English-to-French translation achieving 35.2 BLEU score. Implemented attention mechanisms and beam search optimization.</p>
+                            <a href="https://github.com/username/project1" class="github-link" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Computer Vision for Medical Imaging</h3>
-                    <p class="project-description">Created a deep learning model for automated detection of anomalies in medical imaging data. The system uses convolutional neural networks and transfer learning to achieve high accuracy in identifying pathological conditions.</p>
-                    <a href="https://github.com/johndoe/medical-cv" target="_blank" class="project-link">View on GitHub</a>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://placehold.co/150x150" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Computer Vision for Medical Imaging</h3>
+                            <p>Created a CNN model for detecting pneumonia from chest X-rays with 92% accuracy. Utilized transfer learning with ResNet-50 architecture.</p>
+                            <a href="https://github.com/username/project2" class="github-link" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://placehold.co/150x150" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Reinforcement Learning for Game AI</h3>
+                            <p>Implemented Deep Q-Network to train an agent for Atari games. Achieved superhuman performance on several benchmark environments.</p>
+                            <a href="https://github.com/username/project3" class="github-link" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="project">
-                <div class="project-image">
-                    <img src="https://placehold.co/300x200" alt="Project 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm actively seeking PhD opportunities in Machine Learning and AI research. Feel free to reach out if you'd like to discuss potential collaborations or research positions.</p>
+                <div class="contact-links">
+                    <a href="mailto:johndoe@email.com" class="contact-link">Email Me</a>
+                    <a href="https://linkedin.com/in/johndoe" class="contact-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/johndoe" class="contact-link" target="_blank">GitHub</a>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Reinforcement Learning Trading Agent</h3>
-                    <p class="project-description">Designed and implemented a reinforcement learning agent for algorithmic trading in cryptocurrency markets. The agent uses Q-learning with deep neural networks to make optimal trading decisions based on market indicators.</p>
-                    <a href="https://github.com/johndoe/trading-agent" target="_blank" class="project-link">View on GitHub</a>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="research">
-            <h2>Research Interests</h2>
-            <div class="research-item">
-                <h3>Natural Language Processing</h3>
-                <p>Developing transformer-based models for semantic understanding and text generation tasks.</p>
-            </div>
-            <div class="research-item">
-                <h3>Machine Learning</h3>
-                <p>Exploring optimization techniques and generalization bounds for deep neural networks.</p>
-            </div>
-            <div class="research-item">
-                <h3>Computer Vision</h3>
-                <p>Investigating self-supervised learning methods for image recognition and segmentation.</p>
-            </div>
-        </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publication">
-                <div class="publication-title">A Novel Approach to Text Classification Using Attention Mechanisms</div>
-                <div class="publication-authors">John Doe, Jane Smith, Prof. Alan Turing</div>
-                <div class="publication-source">Proceedings of the International Conference on Machine Learning (ICML), 2023</div>
-            </div>
-            <div class="publication">
-                <div class="publication-title">Efficient Algorithms for Large-Scale Data Clustering</div>
-                <div class="publication-authors">John Doe, Prof. Ada Lovelace</div>
-                <div class="publication-source">Journal of Artificial Intelligence Research, Vol. 45, 2022</div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="research-item">
-                <h3>M.S. in Computer Science</h3>
-                <p>XYZ University | 2022 - Present</p>
-                <p>Thesis: "Advancements in Transformer Architectures for Low-Resource Languages"</p>
-                <p>GPA: 3.8/4.0</p>
-            </div>
-            <div class="research-item">
-                <h3>B.S. in Computer Engineering</h3>
-                <p>ABC University | 2018 - 2022</p>
-                <p>Graduated with Honors</p>
-                <p>GPA: 3.7/4.0</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">TensorFlow</div>
-                <div class="skill-item">PyTorch</div>
-                <div class="skill-item">Scikit-learn</div>
-                <div class="skill-item">R</div>
-                <div class="skill-item">SQL</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">Linux</div>
-                <div class="skill-item">Docker</div>
-                <div class="skill-item">AWS</div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2023 John Doe. All rights reserved.</p>
-            <p>Last updated: December 2023</p>
-        </footer>
-    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
