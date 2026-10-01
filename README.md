@@ -46,4 +46,4 @@ python3 -m http.server 8000
   4. Update the "Previous / Next" links at the bottom of the neighbouring project pages.
 - **Colours and fonts:** change the variables at the top of `assets/css/style.css`. The site always opens in light mode. The dark palette is the `:root[data-theme="dark"]` block, which the moon button switches on, and each visitor's choice is remembered.
 
-Icons are inline SVGs from [Font Awesome Free](https://fontawesome.com) (CC BY 4.0). The font is Nunito Sans, loaded from Google Fonts. To try another, change the `--font-sans` variable and the Google Fonts link in each page’s `<head>`.
+Icons are inline SVGs from [Font Awesome Free](https://fontawesome.com) (CC BY 4.0). Text uses each device’s own system font (San Francisco on Apple devices, Segoe UI on Windows, Roboto on Android), so no font is downloaded. To use a web font instead, add its Google Fonts link to each page’s `<head>` and put its name first in the `--font-sans` variable.
