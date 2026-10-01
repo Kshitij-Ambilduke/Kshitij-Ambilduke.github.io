@@ -1,409 +1,399 @@
-
-    <!DOCTYPE HTML>
-    <html lang="en" style="min-height:100%;">
-    <meta http-equiv="refresh" content="0; URL=https://ambilduke.notion.site/Kshitij-Ambilduke-1b6f9e06108a8050812fd96f490a7567"> 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    
-    <body style="background:black;">
-        <h1>Loading...</h1>
-    </body>
-    
-    </html>
-
-<!--
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Master's Student</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #2c3e50;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #34495e;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #3498db;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 2.5rem;
-            color: #2c3e50;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: #3498db;
-            margin: 15px auto;
-        }
-
-        /* About Section */
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .profile-img {
-            flex: 1;
-            text-align: center;
-        }
-
-        .profile-img img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #fff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        .about-text p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .project-card {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-content {
-            display: flex;
-            align-items: flex-start;
-            padding: 25px;
-        }
-
-        .project-image {
-            flex: 0 0 150px;
-            margin-right: 25px;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .project-info {
-            flex: 1;
-        }
-
-        .project-info h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-
-        .project-info p {
-            margin-bottom: 15px;
-            color: #7f8c8d;
-            line-height: 1.6;
-        }
-
-        .github-link {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .github-link:hover {
-            background-color: #555;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #555;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .contact-link {
-            display: inline-block;
-            background-color: #3498db;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-link:hover {
-            background-color: #2980b9;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .profile-img {
-                margin-bottom: 30px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .project-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .project-image {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kshitij Ambilduke</title>
+  <meta name="description" content="Kshitij Ambilduke — master’s student at the MVA program, ENS Paris-Saclay, working on NLP and its extensions to speech and vision.">
+  <meta name="author" content="Kshitij Ambilduke">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kshitij Ambilduke">
+  <meta property="og:description" content="Kshitij Ambilduke — master’s student at the MVA program, ENS Paris-Saclay, working on NLP and its extensions to speech and vision.">
+  <meta property="og:image" content="https://kshitij-ambilduke.github.io/assets/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@600&amp;text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Apply a saved light/dark choice before first paint.
+    (function () { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">John Doe</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- Icons: Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0) Copyright 2023 Fonticons, Inc. -->
+  <defs>
+    <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol>
+    <symbol id="i-file-lines" viewBox="0 0 384 512"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol>
+    <symbol id="i-google-scholar" viewBox="0 0 512 512"><path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></symbol>
+  </defs>
+</svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="nav-name" href="#top">Kshitij Ambilduke</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="https://drive.google.com/file/d/1QgL9de0eVsKm_M8k5VtyKuKVMjlSMMfM/view?usp=sharing">CV</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <!-- ============================== About ============================== -->
+      <section id="about" class="about" aria-labelledby="name">
+        <div class="intro-head">
+          <h1 class="hero-name" id="name">Kshitij Ambilduke</h1>
+        </div>
+
+        <aside class="profile" aria-label="Contact">
+          <img class="profile-photo" src="assets/img/profile.jpg" alt="Kshitij Ambilduke" width="661" height="720">
+          <a class="btn-cv" href="https://drive.google.com/file/d/1QgL9de0eVsKm_M8k5VtyKuKVMjlSMMfM/view?usp=sharing"><svg class="icon" aria-hidden="true"><use href="#i-file-lines"></use></svg>Résumé</a>
+          <h2 class="profile-heading">Get in touch!</h2>
+          <ul class="contact">
+            <li><a href="mailto:kshitij.a.vnit@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-envelope"></use></svg>kshitij.a.vnit@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/kshitij-ambilduke/"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>LinkedIn</a></li>
+            <li><a href="https://scholar.google.com/citations?user=UjsUiKIAAAAJ&amp;hl=en"><svg class="icon" aria-hidden="true"><use href="#i-google-scholar"></use></svg>Google Scholar</a></li>
+            <li><a href="https://github.com/Kshitij-Ambilduke"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>GitHub</a></li>
+          </ul>
+        </aside>
+
+        <div class="bio prose">
+          <p class="greeting" lang="hi">नमस्कार !</p>
+
+          <p>I am Kshitij Ambilduke, a second-year master’s student at the MVA program, ENS Paris-Saclay. My research interests broadly surround Natural Language Processing (NLP) and I am particularly excited about extensions of NLP towards other modalities like speech and vision. I am currently interning at NAVER LABS Europe under the supervision of <a href="https://sites.google.com/view/mzboito/marcely-zanon-boito">Marcely Zanon Boito</a>, <a href="https://europe.naverlabs.com/people_user_naverlabs/vassilina-nikoulina/">Vassilina Nikoulina</a> and <a href="https://europe.naverlabs.com/people_user_naverlabs/caroline-brun/">Caroline Brun</a>, working on the evaluation of Speech LLMs.</p>
+
+          <p>Before my master's, I worked on extending LLMs to speech as a Research Assistant under the guidance of <a href="https://andre-martins.github.io/">Prof. André F. T. Martins</a> and <a href="https://bgmartins.github.io/">Prof. Bruno Martins</a> at the <a href="https://sardine-lab.github.io/">SARDINE</a> lab in Lisbon. More recently, I investigated the gains of using complementary multimodal data over unimodal counterparts in a video-game corpus under the supervision of <a href="https://pauillac.inria.fr/~seddah/">Dr. Djamé Seddah</a> at the <a href="https://almanach.inria.fr/index-en.html">ALMAnaCH</a> team, INRIA-Paris.</p>
+
+          <p>I completed my bachelor’s in Electronics and Communication from Visvesvaraya National Institute of Technology (VNIT), India. I did my bachelor's thesis with <a href="https://vnit.ac.in/engineering/ece/dr-anamika-singh/">Dr. Anamika Singh</a> where I worked on image captioning. During my pre-final year summer, I worked on interpretable Visual Question Answering under the supervision of <a href="https://andre-martins.github.io/">Prof. André F. T. Martins</a> and <a href="https://bgmartins.github.io/">Prof. Bruno Martins</a>.</p>
+
+          <p>I was also fortunate to be a part of <a href="https://ivlabs.in/">IvLabs</a>, the AI and Robotics lab of VNIT, where I developed most of my research interests thanks to the oversight of <a href="https://vnit.ac.in/engineering/mech/dr-s-s-chiddarwar/">Prof. Shital Chiddarwar</a></p>
+        </div>
+      </section>
+
+      <!-- ============================== News ============================== -->
+      <section id="news" class="section" aria-labelledby="news-title">
+        <h2 class="section-title" id="news-title">News</h2>
+        <ul class="news prose">
+          <li><time datetime="2026-04">Apr. 2026</time><p>Starting an internship at <a href="https://europe.naverlabs.com/"><strong>NAVER LABS Europe</strong></a> on evaluation of Speech LLMs.</p></li>
+          <li><time datetime="2025-09">Sep. 2025</time><p>Starting my second year of master's at the <a href="https://www.master-mva.com/"><strong>MVA program</strong></a>, ENS Paris-Saclay.</p></li>
+          <li><time datetime="2025-08">Aug. 2025</time><p><a href="https://aclanthology.org/2025.findings-emnlp.1071/"><strong>From Tower to Spire: Adding the Speech Modality to a Text-Only LLM</strong></a> Accepted at the Findings of EMNLP 2025.</p></li>
+          <li><time datetime="2025-03">Mar. 2025</time><p><a href="https://arxiv.org/abs/2503.10620"><strong>From Tower to Spire: Adding the Speech Modality to a Text-Only LLM</strong></a> available on arXiv.</p></li>
+          <li><time datetime="2024-09">Sep. 2024</time><p>Starting my first year of master’s at the <a href="https://sites.google.com/chalearn.org/ai-master"><strong>Computer Science department (AI Track)</strong></a>, <strong>Université Paris-Saclay</strong>.</p></li>
+          <li><time datetime="2024-05">May 2024</time><p>Awarded with the <strong>France Excellence Charpak Master Scholarship 2024</strong> for pursuing my master's at Université Paris-Saclay.</p></li>
+        </ul>
+        <details class="news-more">
+          <summary><span class="when-closed">Show older news (5)</span><span class="when-open">Show less</span></summary>
+          <ul class="news prose">
+            <li><time datetime="2023-07">Jul. 2023</time><p>Attended <strong>LxLMS: Lisbon Machine Learning School 2023.</strong></p></li>
+            <li><time datetime="2023-02">Feb. 2023</time><p>My paper titled "<a href="https://ieeexplore.ieee.org/document/10136098"><strong>Attending to Transforms: A Survey on Transformer-based Image Captioning</strong></a>" was accepted at PCEMS 2023.</p></li>
+            <li><time datetime="2021-10">Oct. 2021</time><p>My paper titled "<a href="https://preregister.science/papers_21neurips/18_paper.pdf"><strong>Enhancing Context Through Contrast</strong></a>" was accepted at the <a href="https://preregister.science/"><strong>NeurIPS 2022 Pre-registration workshop</strong></a>.</p></li>
+            <li><time datetime="2021-09">Sep. 2021</time><p>Ranked amongst the top 100 teams in the <a href="https://www.hackerearth.com/en-us/challenges/competitive/amazon-ml-challenge/"><strong>Amazon ML Challenge 2021</strong></a>.</p></li>
+            <li><time datetime="2021-08">Aug. 2021</time><p>Elected as the Chairperson for IEEE VNIT Student Branch.</p></li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- ============================== Publications ============================== -->
+      <section id="publications" class="section" aria-labelledby="publications-title">
+        <h2 class="section-title" id="publications-title">Publications</h2>
+        <ol class="pubs">
+          <li class="pub">
+            <a class="pub-thumb" href="https://aclanthology.org/2025.findings-emnlp.1071/" tabindex="-1" aria-hidden="true"><img src="assets/img/publications/tower-to-spire.png" alt="" loading="lazy"></a>
+            <div class="pub-body">
+              <p class="eyebrow">EMNLP 2025 · Findings</p>
+              <h3 class="pub-title"><a href="https://aclanthology.org/2025.findings-emnlp.1071/">From TOWER to SPIRE: Adding the Speech Modality to a Translation-Specialist LLM</a></h3>
+              <p class="pub-authors"><strong>Kshitij Ambilduke</strong>, Ben Peters, Sonal Sannigrahi, Anil Keshwani, Tsz Kin Lam, Bruno Martins, André F.T. Martins, Marcely Zanon Boito</p>
+              <p class="pub-venue"><strong>Findings of EMNLP 2025</strong></p>
+              <ul class="links">
+                <li><a class="btn" href="https://aclanthology.org/2025.findings-emnlp.1071/">Paper</a></li>
+                <li><a class="btn" href="https://arxiv.org/abs/2503.10620">arXiv</a></li>
+                <li><a class="btn" href="https://github.com/utter-project/SpireLM">Code</a></li>
+                <li><a class="btn" href="projects/spire-lm.html">Project</a></li>
+                <li><button class="btn" type="button" aria-expanded="false" aria-controls="bib-spire">BibTeX</button></li>
+              </ul>
+              <div class="bibtex" id="bib-spire" hidden>
+                <button class="btn copy-btn" type="button" data-copy="bib-spire-text">Copy</button>
+                <pre id="bib-spire-text">@inproceedings{ambilduke-etal-2025-tower,
+    title = "From Tower to Spire: Adding the Speech Modality to a Translation-Specialist {LLM}",
+    author = "Ambilduke, Kshitij  and
+      Peters, Ben  and
+      Sannigrahi, Sonal  and
+      Keshwani, Anil  and
+      Lam, Tsz Kin  and
+      Martins, Bruno  and
+      Martins, Andre  and
+      Zanon Boito, Marcely",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.1071/",
+    doi = "10.18653/v1/2025.findings-emnlp.1071",
+    pages = "19658--19673",
+    ISBN = "979-8-89176-335-7"
+}</pre>
+              </div>
+            </div>
+          </li>
+          <li class="pub">
+            <a class="pub-thumb" href="https://ieeexplore.ieee.org/document/10136098" tabindex="-1" aria-hidden="true"><img src="assets/img/publications/attending-to-transforms.png" alt="" loading="lazy"></a>
+            <div class="pub-body">
+              <p class="eyebrow">PCEMS 2023</p>
+              <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10136098">Attending to Transforms: A Survey on Transformer-based Image Captioning</a></h3>
+              <p class="pub-authors"><strong>Kshitij Ambilduke</strong>, Thanmay Jayakumar, Luqman Farooqui, Himanshu Padole, Anamika Singh</p>
+              <p class="pub-venue">Paradigm Shifts in Communication, Embedded Systems, Machine Learning and Signal Processing (<strong>PCEMS 2023</strong>)</p>
+              <ul class="links">
+                <li><a class="btn" href="https://ieeexplore.ieee.org/document/10136098">Paper</a></li>
+                <li><button class="btn" type="button" aria-expanded="false" aria-controls="bib-pcems">BibTeX</button></li>
+              </ul>
+              <div class="bibtex" id="bib-pcems" hidden>
+                <button class="btn copy-btn" type="button" data-copy="bib-pcems-text">Copy</button>
+                <pre id="bib-pcems-text">@inproceedings{ambilduke2023attending,
+    title = {Attending to Transforms: A Survey on Transformer-based Image Captioning},
+    author = {Ambilduke, Kshitij and Jayakumar, Thanmay and Farooqui, Luqman and Padole, Himanshu and Singh, Anamika},
+    booktitle = {2023 2nd International Conference on Paradigm Shifts in Communications Embedded Systems, Machine Learning and Signal Processing (PCEMS)},
+    pages = {1--6},
+    year = {2023},
+    publisher = {IEEE},
+    doi = {10.1109/PCEMS58491.2023.10136098}
+}</pre>
+              </div>
+            </div>
+          </li>
+          <li class="pub">
+            <a class="pub-thumb" href="https://preregister.science/papers_21neurips/18_paper.pdf" tabindex="-1" aria-hidden="true"><img src="assets/img/publications/enhancing-context-through-contrast.png" alt="" loading="lazy"></a>
+            <div class="pub-body">
+              <p class="eyebrow">NeurIPS 2021 · Workshop</p>
+              <h3 class="pub-title"><a href="https://preregister.science/papers_21neurips/18_paper.pdf">Enhancing Context through Contrast</a></h3>
+              <p class="pub-authors"><strong>Kshitij Ambilduke</strong>, Aneesh Shetye, Diksha Bagade, Rishika Bhagwatkar, Khurshed Fitter, Prasad Vagdargi, Shital Chiddarwar</p>
+              <p class="pub-venue">NeurIPS 2021 Workshop on Pre-registration in Machine Learning</p>
+              <ul class="links">
+                <li><a class="btn" href="https://preregister.science/papers_21neurips/18_paper.pdf">Paper</a></li>
+                <li><a class="btn" href="projects/enhancing-context-through-contrast.html">Project</a></li>
+                <li><button class="btn" type="button" aria-expanded="false" aria-controls="bib-ectc">BibTeX</button></li>
+              </ul>
+              <div class="bibtex" id="bib-ectc" hidden>
+                <button class="btn copy-btn" type="button" data-copy="bib-ectc-text">Copy</button>
+                <pre id="bib-ectc-text">@inproceedings{ambilduke2021enhancing,
+    title = {Enhancing Context Through Contrast},
+    author = {Ambilduke, Kshitij and Shetye, Aneesh and Bagade, Diksha and Bhagwatkar, Rishika and Fitter, Khurshed and Vagdargi, Prasad and Chiddarwar, Shital},
+    booktitle = {NeurIPS 2021 Workshop on Pre-registration in Machine Learning},
+    year = {2021},
+    url = {https://preregister.science/papers_21neurips/18_paper.pdf}
+}</pre>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============================== Projects ============================== -->
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Selected Projects</h2>
+        <ul class="projects">
+          <li class="project-card">
+            <a class="project-media" href="projects/spire-lm.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/spire-lm.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/spire-lm.html">Spire-LM: Extending LLMs to Speech</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://aclanthology.org/2025.findings-emnlp.1071/">Paper</a></li>
+                  <li><a href="https://github.com/utter-project/SpireLM">Code</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="profile-img">
-                    <img src="https://placehold.co/300x300" alt="John Doe">
-                </div>
-                <div class="about-text">
-                    <h3>Master's Student in Computer Science</h3>
-                    <p>I am a dedicated Master's student specializing in Machine Learning and Artificial Intelligence at XYZ University. My research focuses on deep learning applications in natural language processing and computer vision.</p>
-                    <p>With a strong foundation in mathematics and programming, I have developed expertise in Python, TensorFlow, and PyTorch. My academic journey has been driven by a passion for solving complex problems through innovative algorithmic approaches.</p>
-                    <p>I am currently seeking PhD opportunities to further explore the frontiers of AI research and contribute to groundbreaking discoveries in the field.</p>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-image">
-                            <img src="https://placehold.co/150x150" alt="Project 1">
-                        </div>
-                        <div class="project-info">
-                            <h3>Neural Machine Translation</h3>
-                            <p>Developed a transformer-based model for English-to-French translation achieving 35.2 BLEU score. Implemented attention mechanisms and beam search optimization.</p>
-                            <a href="https://github.com/username/project1" class="github-link" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-image">
-                            <img src="https://placehold.co/150x150" alt="Project 2">
-                        </div>
-                        <div class="project-info">
-                            <h3>Computer Vision for Medical Imaging</h3>
-                            <p>Created a CNN model for detecting pneumonia from chest X-rays with 92% accuracy. Utilized transfer learning with ResNet-50 architecture.</p>
-                            <a href="https://github.com/username/project2" class="github-link" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-image">
-                            <img src="https://placehold.co/150x150" alt="Project 3">
-                        </div>
-                        <div class="project-info">
-                            <h3>Reinforcement Learning for Game AI</h3>
-                            <p>Implemented Deep Q-Network to train an agent for Atari games. Achieved superhuman performance on several benchmark environments.</p>
-                            <a href="https://github.com/username/project3" class="github-link" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/streaming-llms-attention-sinks.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/streaming-llms-attention-sinks.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/streaming-llms-attention-sinks.html">Streaming LLMs using Attention Sinks</a></h3>
+                <ul class="card-links">
+                  <li><a href="assets/pdf/streaming-llms-attention-sinks/poster.pdf">Poster</a></li>
+                  <li><a href="assets/pdf/streaming-llms-attention-sinks/report.pdf">Report</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm actively seeking PhD opportunities in Machine Learning and AI research. Feel free to reach out if you'd like to discuss potential collaborations or research positions.</p>
-                <div class="contact-links">
-                    <a href="mailto:johndoe@email.com" class="contact-link">Email Me</a>
-                    <a href="https://linkedin.com/in/johndoe" class="contact-link" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/johndoe" class="contact-link" target="_blank">GitHub</a>
-                </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/cross-lingual-intervention.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/cross-lingual-intervention.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/cross-lingual-intervention.html">Cross-Lingual Intervention for Low-resource languages</a></h3>
+                <ul class="card-links">
+                  <li><a href="assets/pdf/cross-lingual-intervention/poster.pdf">Poster</a></li>
+                  <li><a href="assets/pdf/cross-lingual-intervention/report.pdf">Report</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/score-based-image-generation.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/score-based-image-generation.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/score-based-image-generation.html">Score based image generation</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/Kshitij-Ambilduke/ScoreBasedGenerativeModels">Code</a></li>
+                  <li><a href="assets/pdf/score-based-image-generation/presentation.pdf">Presentation</a></li>
+                  <li><a href="assets/pdf/score-based-image-generation/report.pdf">Report</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/unified-framework-ddpms.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/unified-framework-ddpms.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/unified-framework-ddpms.html">Unified Framework for DDPMs</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/vujadinovicn/text2image-diffusion/tree/kshitij">Code</a></li>
+                  <li><a href="assets/pdf/unified-framework-ddpms/poster.pdf">Poster</a></li>
+                  <li><a href="assets/pdf/unified-framework-ddpms/report.pdf">Report</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/sparse-vl-alignments-vqa.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/sparse-vl-alignments-vqa.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/sparse-vl-alignments-vqa.html">Sparse Vision Language Alignments for VQA</a></h3>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/dsu-speaker-recognition.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/dsu-speaker-recognition.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/dsu-speaker-recognition.html">Speaker recoginition using Discrete speech units</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/Kshitij-Ambilduke/DSU-Speaker-Recognition">Code</a></li>
+                  <li><a href="assets/pdf/dsu-speaker-recognition/slides.pdf">Slides</a></li>
+                  <li><a href="assets/pdf/dsu-speaker-recognition/report.pdf">Report</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/enhancing-context-through-contrast.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/enhancing-context-through-contrast.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/enhancing-context-through-contrast.html">Enhancing context through contrast</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://preregister.science/papers_21neurips/18_paper.pdf">Paper</a></li>
+                  <li><a href="https://preregister.science/posters_21neurips/18_poster.png">Poster</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=YCn96BDD-j8">Video</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/medical-vqa.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/medical-vqa.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/medical-vqa.html">Medical Visual Question Answering</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/Kshitij-Ambilduke/MedVQA">Code</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/neural-machine-translation.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/neural-machine-translation.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/neural-machine-translation.html">Neural Machine Translation</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/IvLabs/Natural-Language-Processing/tree/master/neural_machine_translation">Code</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/language-modelling.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/language-modelling.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/language-modelling.html">Language Modelling</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/IvLabs/Natural-Language-Processing/tree/master/char_rnns">Code</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/visual-transformers.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/visual-transformers.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/visual-transformers.html">[reproducing] Visual Transformers</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://github.com/Kshitij-Ambilduke/Visual-Transformers">Code</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <a class="project-media" href="projects/memes-vs-notes.html" tabindex="-1" aria-hidden="true"><img src="assets/img/projects/memes-vs-notes.png" alt="" loading="lazy"></a>
+            <div class="project-body">
+              <h3 class="project-name"><a href="projects/memes-vs-notes.html">Memes-vs-Notes</a></h3>
+                <ul class="card-links">
+                  <li><a href="https://www.ivlabs.in/machine-learning.html">IvLabs</a></li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 John Doe. All rights reserved.</p>
+      <!-- ============================== Notes ============================== -->
+      <section id="notes" class="section" aria-labelledby="notes-title">
+        <h2 class="section-title" id="notes-title">Jibber-Jabber <span class="soon">coming soon :)</span></h2>
+        <div class="notes">
+          <details class="note-group">
+            <summary><span aria-hidden="true">📒</span> Paper Notes <span class="note-count">10</span></summary>
+            <ul class="note-list">
+              <li>SpiritLM</li>
+              <li>AudioPaLM</li>
+              <li>SpeechGPT</li>
+              <li>VoxTLM</li>
+              <li>HuBERT</li>
+              <li>Hibiki KyutAI</li>
+              <li>Whisper Open AI</li>
+              <li>On the Robust Approximation of ASR Metrics</li>
+              <li>TowerLLM</li>
+              <li>COMET Metric</li>
+            </ul>
+          </details>
+          <details class="note-group">
+            <summary><span aria-hidden="true">📔</span> Other notes <span class="note-count">7</span></summary>
+            <ul class="note-list">
+              <li>Information and Entropy</li>
+              <li>(Gaussian) Mixture Models</li>
+              <li>Principle component analysis</li>
+              <li>Rosenblatt’s Perceptron</li>
+              <li>Word2Vec</li>
+              <li>Variational Auto-encoder</li>
+              <li>From Value Iteration to RLHF</li>
+            </ul>
+          </details>
         </div>
-    </footer>
+      </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Last updated October 2026</p>
+      <ul class="footer-links">
+        <li><a href="mailto:kshitij.a.vnit@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-envelope"></use></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=UjsUiKIAAAAJ&amp;hl=en" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="#i-google-scholar"></use></svg></a></li>
+        <li><a href="https://github.com/Kshitij-Ambilduke" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/kshitij-ambilduke/" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
--->
